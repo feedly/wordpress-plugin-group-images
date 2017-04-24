@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Feedly add group of images
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Clement Osternaud | Front-End developer at Feedly
  * Author URI: http://feedly.com
  * License: GPL2
@@ -17,6 +17,7 @@ function fgi_enqueue_admin_scripts() {
 }
 
 add_filter('mce_buttons', 'fgi_register_tinymce_button');
+
 function fgi_register_tinymce_button($button_array) {
   global $current_screen;
   $type = $current_screen->post_type;
@@ -27,7 +28,6 @@ function fgi_register_tinymce_button($button_array) {
 }
 
 add_filter('mce_external_plugins', 'fgi_register_tinymce_plugin');
-
 
 function fgi_register_tinymce_plugin($plugin_array) {
   global $current_screen;

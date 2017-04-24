@@ -59,19 +59,17 @@ document.getElementById('cancel-action').addEventListener('click', function() {
 
 document.getElementById('submit-action').addEventListener('click', function() {
   var captionText = document.getElementById('group_caption').value;
-  var shortcode = '<div class="image-group webfeed-image-group frame size-large">';
-  shortcode += `<div class="list-images">`;
+  var shortcode = '<figure class="webfeeds-image-group" role="group">';
   if (images.length > 0) {
     images.forEach(function(image) {
-      shortcode += `<div class="image-group-item"><img src="${image.url}" /></div>`;
+      shortcode += `<figure><img src="${image.url}" /></figure>`;
     });
-    shortcode += `</div>`;
 
     if (captionText && captionText !== '') {
-      shortcode += `<div class="caption">${captionText}</div>`;
+      shortcode += `<figcaption>${captionText}</figcaption>`;
     }
 
-    shortcode += '</div>&nbsp;';
+    shortcode += '</figure>&nbsp;';
 
     passed_arguments.editor.selection.setContent(shortcode);
   }

@@ -84,7 +84,7 @@ textarea {
   width: 100%;
 }
 
-textarea,
+textarea:focus,
 .field input:focus {
   background: #FFFFFF;
   border-color: #2BB24C;
