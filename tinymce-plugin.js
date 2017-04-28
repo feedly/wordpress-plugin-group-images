@@ -14,7 +14,7 @@
           width: 700,
           height: 600,
           inline: 1,
-          popup_css: '/tinymce-style.css'
+          popup_css: '/assets/dialog-default.css'
         },
         {
           editor: editor,

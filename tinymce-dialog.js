@@ -65,11 +65,13 @@ document.getElementById('submit-action').addEventListener('click', function() {
       shortcode += `<figure><img src="${image.url}" /></figure>`;
     });
 
+    shortcode += `<figcaption>`;
+
     if (captionText && captionText !== '') {
-      shortcode += `<figcaption>${captionText}</figcaption>`;
+      shortcode += captionText;
     }
 
-    shortcode += '</figure>&nbsp;';
+    shortcode += '</figcaption></figure>&nbsp;';
 
     passed_arguments.editor.selection.setContent(shortcode);
   }
