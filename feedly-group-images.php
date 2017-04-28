@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Feedly add group of images
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Clement Osternaud | Front-End developer at Feedly
  * Author URI: http://feedly.com
  * License: GPL2
